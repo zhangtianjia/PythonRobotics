@@ -1,10 +1,15 @@
+import os
+import sys
+import random
 from unittest import TestCase
 
-import sys
-sys.path.append("./ArmNavigation/n_joint_arm_to_point_control/")
+sys.path.append(os.path.dirname(__file__) + "/../ArmNavigation/n_joint_arm_to_point_control/")
 
-from ArmNavigation.n_joint_arm_to_point_control import n_joint_arm_to_point_control as m
+import n_joint_arm_to_point_control as m
+
 print(__file__)
+
+random.seed(12345)
 
 
 class Test(TestCase):
